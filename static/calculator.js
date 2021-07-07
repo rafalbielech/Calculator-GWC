@@ -65,13 +65,8 @@ $('button').click(function (event) {
                     } else {
                         if (operator_type == "+") {
                             running_val += i;
-                        } else if (operator_type == "-") {
-                            running_val -= i;
                         } else if (operator_type == "*") {
                             running_val *= i;
-                        } else if (operator_type == "/") {
-                            running_val /= i;
-                        }
                     }
                 }
             }
