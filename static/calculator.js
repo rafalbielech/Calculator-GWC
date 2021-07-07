@@ -65,17 +65,20 @@ $('button').click(function (event) {
                     } else {
                         if (operator_type == "+") {
                             running_val += i;
+                        } else if (operator_type == "-") {
+                            running_val -= i;
                         } else if (operator_type == "*") {
                             running_val *= i;
+                        }
                     }
                 }
             }
-
-            // update screen
-            calculator_state.val = running_val;
-            calculator_state.operand_string = "";
-
-            $('.calculator-screen').val(running_val);
         }
-    };
+
+        // update screen
+        calculator_state.val = running_val;
+        calculator_state.operand_string = "";
+
+        $('.calculator-screen').val(running_val);
+    }
 });
